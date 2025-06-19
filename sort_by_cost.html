@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NASA Spacecraft Comparison Tool - Sorted by Cost</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        .header {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        
+        .buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .card {
+            background-color: white;
+            border: 2px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .card h3 {
+            margin-top: 0;
+            color: #e74c3c;
+            font-size: 18px;
+        }
+        
+        .mission-type {
+            background-color: #9b59b6;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .details {
+            line-height: 1.6;
+        }
+        
+        .cost {
+            font-weight: bold;
+            color: #27ae60;
+        }
+        
+        .range {
+            font-weight: bold;
+            color: #f39c12;
+        }
+        
+        .crew {
+            font-weight: bold;
+            color: #8e44ad;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>NASA Spacecraft Comparison Tool</h1>
+        <p>Spacecraft sorted by cost (low to high)</p>
+    </div>
+    
+    <div class="buttons">
+        <button class="btn" onclick="location.href='index.html'">Reset View</button>
+        <button class="btn" onclick="location.href='sort_by_cost.html'">Sort by Cost</button>
+        <button class="btn" onclick="location.href='sort_by_range.html'">Sort by Range</button>
+    </div>
+    
+    <div class="grid">
+        <div class="card">
+            <h3>SpaceX Dragon</h3>
+            <div class="mission-type">ISS Resupply</div>
+            <div class="details">
+                <div class="cost">Cost: $400 million USD</div>
+                <div class="range">Range: 400 km</div>
+                <div class="crew">Crew Capacity: 7</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Dawn</h3>
+            <div class="mission-type">Deep Space</div>
+            <div class="details">
+                <div class="cost">Cost: $446 million USD</div>
+                <div class="range">Range: 500000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>MESSENGER</h3>
+            <div class="mission-type">Deep Space</div>
+            <div class="details">
+                <div class="cost">Cost: $446 million USD</div>
+                <div class="range">Range: 77000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Magellan</h3>
+            <div class="mission-type">Venus</div>
+            <div class="details">
+                <div class="cost">Cost: $550 million USD</div>
+                <div class="range">Range: 108000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Lunar Reconnaissance Orbiter</h3>
+            <div class="mission-type">Lunar</div>
+            <div class="details">
+                <div class="cost">Cost: $583 million USD</div>
+                <div class="range">Range: 384400 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Kepler Space Telescope</h3>
+            <div class="mission-type">Deep Space</div>
+            <div class="details">
+                <div class="cost">Cost: $600 million USD</div>
+                <div class="range">Range: 150000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>New Horizons</h3>
+            <div class="mission-type">Deep Space</div>
+            <div class="details">
+                <div class="cost">Cost: $720 million USD</div>
+                <div class="range">Range: 7500000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Spitzer Space Telescope</h3>
+            <div class="mission-type">Deep Space</div>
+            <div class="details">
+                <div class="cost">Cost: $800 million USD</div>
+                <div class="range">Range: 150000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Spirit Mars Rover</h3>
+            <div class="mission-type">Mars</div>
+            <div class="details">
+                <div class="cost">Cost: $820 million USD</div>
+                <div class="range">Range: 225000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Opportunity Mars Rover</h3>
+            <div class="mission-type">Mars</div>
+            <div class="details">
+                <div class="cost">Cost: $820 million USD</div>
+                <div class="range">Range: 225000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Voyager 1</h3>
+            <div class="mission-type">Deep Space</div>
+            <div class="details">
+                <div class="cost">Cost: $865 million USD</div>
+                <div class="range">Range: 24000000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Viking 1 Lander</h3>
+            <div class="mission-type">Mars</div>
+            <div class="details">
+                <div class="cost">Cost: $935 million USD</div>
+                <div class="range">Range: 225000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Juno</h3>
+            <div class="mission-type">Jupiter</div>
+            <div class="details">
+                <div class="cost">Cost: $1130 million USD</div>
+                <div class="range">Range: 778000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Galileo</h3>
+            <div class="mission-type">Jupiter</div>
+            <div class="details">
+                <div class="cost">Cost: $1400 million USD</div>
+                <div class="range">Range: 778000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Parker Solar Probe</h3>
+            <div class="mission-type">Deep Space</div>
+            <div class="details">
+                <div class="cost">Cost: $1500 million USD</div>
+                <div class="range">Range: 150000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Chandra X-ray Observatory</h3>
+            <div class="mission-type">Satellite</div>
+            <div class="details">
+                <div class="cost">Cost: $1650 million USD</div>
+                <div class="range">Range: 139000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Space Shuttle Atlantis</h3>
+            <div class="mission-type">ISS Resupply</div>
+            <div class="details">
+                <div class="cost">Cost: $1700 million USD</div>
+                <div class="range">Range: 600 km</div>
+                <div class="crew">Crew Capacity: 7</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Curiosity Rover</h3>
+            <div class="mission-type">Mars</div>
+            <div class="details">
+                <div class="cost">Cost: $2500 million USD</div>
+                <div class="range">Range: 225000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Mars Perseverance Rover</h3>
+            <div class="mission-type">Mars</div>
+            <div class="details">
+                <div class="cost">Cost: $2700 million USD</div>
+                <div class="range">Range: 225000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Cassini-Huygens</h3>
+            <div class="mission-type">Saturn</div>
+            <div class="details">
+                <div class="cost">Cost: $3900 million USD</div>
+                <div class="range">Range: 1500000000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Artemis Orion</h3>
+            <div class="mission-type">Lunar</div>
+            <div class="details">
+                <div class="cost">Cost: $4100 million USD</div>
+                <div class="range">Range: 384400 km</div>
+                <div class="crew">Crew Capacity: 4</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Hubble Space Telescope</h3>
+            <div class="mission-type">Satellite</div>
+            <div class="details">
+                <div class="cost">Cost: $4700 million USD</div>
+                <div class="range">Range: 547 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>James Webb Space Telescope</h3>
+            <div class="mission-type">Deep Space</div>
+            <div class="details">
+                <div class="cost">Cost: $10000 million USD</div>
+                <div class="range">Range: 1500000 km</div>
+                <div class="crew">Crew Capacity: 0</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Apollo 11 Command Module</h3>
+            <div class="mission-type">Lunar</div>
+            <div class="details">
+                <div class="cost">Cost: $25000 million USD</div>
+                <div class="range">Range: 384400 km</div>
+                <div class="crew">Crew Capacity: 3</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>International Space Station</h3>
+            <div class="mission-type">ISS Resupply</div>
+            <div class="details">
+                <div class="cost">Cost: $150000 million USD</div>
+                <div class="range">Range: 408 km</div>
+                <div class="crew">Crew Capacity: 6</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
